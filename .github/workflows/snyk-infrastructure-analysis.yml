@@ -39,7 +39,3 @@ jobs:
           # or `main.tf` for a Terraform configuration file
           image: clojure:openjdk-8-lein
           json: true
-      - name: Upload result to GitHub Code Scanning
-        uses: github/codeql-action/upload-sarif@v1
-        with:
-          sarif_file: snyk.sarif
